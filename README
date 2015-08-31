@@ -1,0 +1,49 @@
+Original ♫ netcat - Cycles Per Instruction
+===============================
+
+by [Brandon Lucia](http://brandonlucia.com/music.html), Andrew Olmstead, and David Balatero
+
+For more info go to: https://github.com/usrbinnc/netcat-cpi-kernel-module
+===============================
+
+---------------------------------------------------
+-> Wasn't made to be incorporated into their github branch and as such this proj wasn't forked
+---------------------------------------------------
+
+To run this version:
+
+1) make //if not yet compiled
+2) reload.sh
+3) go to a different terminal, and call cmd.sh p, where p is you're desired parameter
+	valid p:
+		- next
+		- prev
+		- rand
+		- beg
+		- 0-9 (jump to track)
+		- stop
+---------------------------------------------------
+4) to add songs to the playlist
+	Go to /music
+
+	run createLib.sh music.ogg n //where n is the given track number, for example if you currently
+				       have track 1-9, and you want to add a tenth, call
+				       createLib.sh tenth.ogg 10
+				       NOTE: this script is only valid for ogg files
+
+	go to /tracks and open your newly created trk'n'.c file.
+
+	update the track's length (the Array size value that was outputted when calling createLib.sh)
+
+
+	Supposing we added a TENTH track to the playlist:
+
+	Add "netcat-y+= tracks/trk10.o" to the Makefile
+
+	Add "extern struct netcat_track netcat_cpi_trk10;" to netcat_main.c file
+	Add "&netcat_cpi_trk10", to the  netcat_track struct in netcat_main.c file
+
+
+~Please check KernelMusicPlayerReport.odt for more descriptive information on how to use this kernel ~
+	
+
