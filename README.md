@@ -30,7 +30,7 @@ AKA: You're using a kernel module to simulate an iPod's functions through a term
 </p> <br><br>
 
 
-<b>To run this version:</b>
+<b>To run this version:</b><br>
 
 1) make //if not yet compiled<br>
 2) reload.sh<br>
