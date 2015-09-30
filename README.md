@@ -27,10 +27,10 @@ New additions include:<br>
 6) Created a bash script file which allows users to easily add songs to the kernel's playlist <br>
 
 AKA: You're using a kernel module to simulate an iPod's functions through a terminal<br>
-</p>
+</p> <br><br>
 
 
-To run this version:
+<b>To run this version:</b>
 
 1) make //if not yet compiled<br>
 2) reload.sh<br>
