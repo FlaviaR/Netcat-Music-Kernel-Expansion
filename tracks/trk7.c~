@@ -1,0 +1,9 @@
+#include "../netcat.h"
+#define NETCAT_CPI_TRK7_LEN 2056854
+struct netcat_track netcat_cpi_trk7 = {
+	.name = "Sleeping In My Car (Demo)",
+	.len  = NETCAT_CPI_TRK7_LEN,
+	.data = {
+#include "Sleeping_In_My_Car.h"
+	}
+};
