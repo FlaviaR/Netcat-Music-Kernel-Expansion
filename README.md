@@ -4,6 +4,8 @@ Original ♫ netcat - Cycles Per Instruction
 by [Brandon Lucia](http://brandonlucia.com/music.html), Andrew Olmstead, and David Balatero
 
 For more info go to: https://github.com/usrbinnc/netcat-cpi-kernel-module
+
+I DO NOT OWN ANY OF THE SONGS WHICH ARE BEING DEMOED
 ===============================
 
 ---------------------------------------------------
@@ -12,16 +14,17 @@ For more info go to: https://github.com/usrbinnc/netcat-cpi-kernel-module
 
 To run this version:
 
-1) make //if not yet compiled
-2) reload.sh
-3) go to a different terminal, and call cmd.sh p, where p is you're desired parameter
-	valid p:
-		- next
-		- prev
-		- rand
-		- beg
-		- 0-9 (jump to track)
-		- stop
+1) make //if not yet compiled<br>
+2) reload.sh<br>
+3) go to a different terminal, and call cmd.sh p, where p is you're desired parameter<br>
+	valid p:<br><p>
+		- next <br>
+		- prev<br>
+		- rand<br>
+		- beg<br>
+		- 0-9 (jump to track)<br>
+		- stop<br>
+		</p>
 ---------------------------------------------------
 4) to add songs to the playlist
 	Go to /music
