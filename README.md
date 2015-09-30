@@ -6,11 +6,29 @@ by [Brandon Lucia](http://brandonlucia.com/music.html), Andrew Olmstead, and Dav
 For more info go to: https://github.com/usrbinnc/netcat-cpi-kernel-module
 
 I DO NOT OWN ANY OF THE SONGS WHICH ARE BEING DEMOED
-===============================
+
 
 ---------------------------------------------------
--> Wasn't made to be incorporated into their github branch and as such this proj wasn't forked
+This project wasn't made to be incorporated into their github branch and as such this proj wasn't forked
 ---------------------------------------------------
+<p>
+New additions include:<br>
+1) Changing the creation of the device node to be read/write <br>
+2) Implemented a device_write routine to get user commands from a terminal <br>
+3) Implemented the device_read routine to deal with those commands <br>
+4) The following commands are accepted:<br>
+      - Next song (n) <br>
+      - Previous song (p) <br>
+      - Go to track ( 0 … 9 )<br>
+      - Random play (r)<br>
+      - Go to the beginning of the track (b) <br>
+      - Stop playing (s) <br>
+5) Implemented two C programs to convert from ogg to array and back from array to ogg<br>
+6) Created a bash script file which allows users to easily add songs to the kernel's playlist <br>
+
+AKA: You're using a kernel module to simulate an iPod's functions through a terminal<br>
+</p>
+
 
 To run this version:
 
